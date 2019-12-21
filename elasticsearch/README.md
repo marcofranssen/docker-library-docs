@@ -16,8 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.5.1`](https://github.com/docker-library/elasticsearch/blob/c2f5a0165f9a3b6e071dfd413ea16fcca8522ff1/7/Dockerfile)
--	[`6.8.6`](https://github.com/docker-library/elasticsearch/blob/4c04ee848e9183d70c6109e9325d6a40520d334d/6/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v5` ARCHITECTURE
+
+[![arm32v5/elasticsearch build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v5/job/elasticsearch.svg?label=arm32v5/elasticsearch%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v5/job/elasticsearch/)
 
 # Quick reference
 
