@@ -16,8 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.5.1`](https://github.com/docker-library/logstash/blob/8285a96df428bbc132e4650c6c4037617eeded12/7/Dockerfile)
--	[`6.8.6`](https://github.com/docker-library/logstash/blob/befe697aacab90fc508ae0db4e292dae66a1820c/6/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `ppc64le` ARCHITECTURE
+
+[![ppc64le/logstash build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/ppc64le/job/logstash.svg?label=ppc64le/logstash%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/ppc64le/job/logstash/)
 
 # Quick reference
 
