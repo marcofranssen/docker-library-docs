@@ -19,6 +19,8 @@ WARNING:
 -	[`7.5.1`](https://github.com/docker-library/kibana/blob/f6ea089ffdd329921f5aaf97d49288c9e1e411c7/7/Dockerfile)
 -	[`6.8.6`](https://github.com/docker-library/kibana/blob/581e38e19e48fcae9ef2bf58afb20ffebe9da082/6/Dockerfile)
 
+[![amd64/kibana build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/amd64/job/kibana.svg?label=amd64/kibana%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/kibana/)
+
 # Quick reference
 
 -	**Where to get help**:  
