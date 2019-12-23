@@ -16,12 +16,14 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`18.04`, `bionic-20191202`, `bionic`, `latest`](https://github.com/tianon/docker-brew-ubuntu-core/blob/14faa76f80e543f7507828430ff50b4a58466ffd/bionic/Dockerfile)
--	[`19.04`, `disco-20191127`, `disco`](https://github.com/tianon/docker-brew-ubuntu-core/blob/14faa76f80e543f7507828430ff50b4a58466ffd/disco/Dockerfile)
--	[`19.10`, `eoan-20191127`, `eoan`, `rolling`](https://github.com/tianon/docker-brew-ubuntu-core/blob/14faa76f80e543f7507828430ff50b4a58466ffd/eoan/Dockerfile)
--	[`20.04`, `focal-20191129`, `focal`, `devel`](https://github.com/tianon/docker-brew-ubuntu-core/blob/14faa76f80e543f7507828430ff50b4a58466ffd/focal/Dockerfile)
--	[`14.04`, `trusty-20191217`, `trusty`](https://github.com/tianon/docker-brew-ubuntu-core/blob/14faa76f80e543f7507828430ff50b4a58466ffd/trusty/Dockerfile)
--	[`16.04`, `xenial-20191212`, `xenial`](https://github.com/tianon/docker-brew-ubuntu-core/blob/14faa76f80e543f7507828430ff50b4a58466ffd/xenial/Dockerfile)
+-	[`18.04`, `bionic-20191202`, `bionic`, `latest`](https://github.com/tianon/docker-brew-ubuntu-core/blob/d97a4330278f617a0764753a7dd697c0cb2a9b7f/bionic/Dockerfile)
+-	[`19.04`, `disco-20191127`, `disco`](https://github.com/tianon/docker-brew-ubuntu-core/blob/d97a4330278f617a0764753a7dd697c0cb2a9b7f/disco/Dockerfile)
+-	[`19.10`, `eoan-20191127`, `eoan`, `rolling`](https://github.com/tianon/docker-brew-ubuntu-core/blob/d97a4330278f617a0764753a7dd697c0cb2a9b7f/eoan/Dockerfile)
+-	[`20.04`, `focal-20191129`, `focal`, `devel`](https://github.com/tianon/docker-brew-ubuntu-core/blob/d97a4330278f617a0764753a7dd697c0cb2a9b7f/focal/Dockerfile)
+-	[`14.04`, `trusty-20191217`, `trusty`](https://github.com/tianon/docker-brew-ubuntu-core/blob/d97a4330278f617a0764753a7dd697c0cb2a9b7f/trusty/Dockerfile)
+-	[`16.04`, `xenial-20191212`, `xenial`](https://github.com/tianon/docker-brew-ubuntu-core/blob/d97a4330278f617a0764753a7dd697c0cb2a9b7f/xenial/Dockerfile)
+
+[![arm64v8/ubuntu build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/ubuntu.svg?label=arm64v8/ubuntu%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/ubuntu/)
 
 # Quick reference
 
@@ -62,9 +64,9 @@ Development of Ubuntu is led by Canonical Ltd. Canonical generates revenue throu
 
 This image is built from official rootfs tarballs provided by Canonical (specifically, https://partner-images.canonical.com/core/).
 
-The `ubuntu:latest` tag points to the "latest LTS", since that's the version recommended for general use. The `ubuntu:rolling` tag points to the latest release (regardless of LTS status).
+The `arm64v8/ubuntu:latest` tag points to the "latest LTS", since that's the version recommended for general use. The `arm64v8/ubuntu:rolling` tag points to the latest release (regardless of LTS status).
 
-Along a similar vein, the `ubuntu:devel` tag is an alias for whichever release the "devel" suite on the mirrors currently points to, as determined by the following one-liner: `wget -qO- http://archive.ubuntu.com/ubuntu/dists/devel/Release | awk -F ': ' '$1 == "Codename" { print $2; exit }'`
+Along a similar vein, the `arm64v8/ubuntu:devel` tag is an alias for whichever release the "devel" suite on the mirrors currently points to, as determined by the following one-liner: `wget -qO- http://archive.ubuntu.com/ubuntu/dists/devel/Release | awk -F ': ' '$1 == "Codename" { print $2; exit }'`
 
 ## Locales
 
