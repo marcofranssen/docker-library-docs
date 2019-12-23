@@ -16,11 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`20191219`, `edge`](https://github.com/alpinelinux/docker-alpine/blob/a6328a093ab5b7ad9fbd28d73eba6c8bab28b852/x86_64/Dockerfile)
--	[`3.11.0`, `3.11`, `3`, `latest`](https://github.com/alpinelinux/docker-alpine/blob/1527654153837aabbc881783be404be36997689b/x86_64/Dockerfile)
--	[`3.10.3`, `3.10`](https://github.com/alpinelinux/docker-alpine/blob/410e490d5b140378624dc7c1c740c94462d8d6d3/x86_64/Dockerfile)
--	[`3.9.4`, `3.9`](https://github.com/alpinelinux/docker-alpine/blob/29db8d88a0387f56cc77b270f72d33b9d48fd021/x86_64/Dockerfile)
--	[`3.8.4`, `3.8`](https://github.com/alpinelinux/docker-alpine/blob/dc10be162e9d2c3f799fde73e25ad30f78ff479b/x86_64/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `windows-amd64` ARCHITECTURE
+
+[![winamd64/alpine build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/windows-amd64/job/alpine.svg?label=winamd64/alpine%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/windows-amd64/job/alpine/)
 
 # Quick reference
 
@@ -60,7 +58,7 @@ WARNING:
 Use like you would any other base image:
 
 ```dockerfile
-FROM alpine:3.7
+FROM winamd64/alpine:3.7
 RUN apk add --no-cache mysql-client
 ENTRYPOINT ["mysql"]
 ```
